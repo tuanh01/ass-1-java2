@@ -1,0 +1,12 @@
+public static boolean isNumber(String number) {
+  try {
+    int x = Integer.parseInt(number);
+    return true;
+  } catch(Exception x) {
+    System.out.println(x.getMessage());
+    return false;
+  }
+}
+public static void main(String[] args) {
+  System.out.println(isNumber("10"));
+}
